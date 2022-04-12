@@ -1,0 +1,129 @@
+.services {
+    width: 100%;
+    height: 125vh;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .services_logo {
+        padding: 1em 0 0 1em;
+        color: #0011fe;
+        font-size: 3em;
+    }
+}
+
+.services_container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+    margin-top: 2em;
+}
+.services_contents {
+    width: 80%;
+    margin: 1.5em;
+    height: 23em;
+    padding: 0.7em;
+    box-shadow: 1px 4px 8px rgb(0, 0, 0.5);
+    position: relative;
+    .img_con {
+        width: 100%;
+        text-align: center;
+        height: 8em;
+        margin: auto;
+        cursor: pointer;
+        .ux {
+            object-fit: cover;
+            width: 50%;
+            height: 100%;
+            border-radius: 60%;
+            background-color: #ffffff;
+        }
+    }
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #e60aaf;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+}
+
+  .services_contents:hover .overlay {
+      bottom: 0;
+      height: 100%;
+  }
+
+.txt-flex {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .txt1 {
+        color: white;
+        margin-bottom: auto;
+        padding-top: 0.6em;
+    }
+    .txt {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+  }
+
+// medias is here
+@media (max-width: 876px) {
+    .services {
+        height: min-content;
+        padding-bottom: 2.5em;
+    }
+    .services_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        height: min-content;
+        padding-bottom: 2.5em;
+    }
+    .services_logo {
+        font-size: 2em;
+    }
+    .services_container {
+        grid-template-columns: 1fr;
+    }
+
+    .img_con {
+        margin: auto;
+        .ux {
+            width: 50%;
+            height: 100%;
+            border-radius: 60%;
+            background-color: #ffffff;
+        }
+    }
+
+    .services_contents {
+        .overlay {
+            position: relative;
+            background-color: #e60aaf;
+        }
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .services {
+        .services_logo {
+            font-size: 1.6em;
+        }
+    }
+}

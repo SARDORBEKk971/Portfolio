@@ -1,0 +1,19 @@
+/* javascript */
+// when scrolling
+.nav_container.sticky {
+    padding: 0.6em 0;
+    background: linear-gradient(to bottom, #654ea3, #eaafc8); 
+    box-shadow: rgba(0, 0, 0, 0.1) 16px 10px 16px 16px;
+}
+
+.nav_container.sticky a {
+    color: #fff;
+}
+// scroling fade //
+.fade-in {
+    opacity: 0;
+    transition: opacity 350ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}

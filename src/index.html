@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio / Sardor Ulmasov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.scss">
+    <link rel="stylesheet" href="./css/about/indexAbout.scss">
+    <link rel="stylesheet" href="./css/services/services.scss">
+    <link rel="stylesheet" href="./css/footer/footer.scss">
+    <script src="./js/script.js" defer></script>        
+</head> 
+<body>
+    <header>
+        <div class="nav_container" id="nav_container">
+            <div class="logo"><a href="index.html" class="logo_a">S\U</a></div>
+            <ul class="nav_lists " id="nav_lists">
+                <div id="nav_cancel">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <li class="nav_list">
+                    <a href="index.html" class="nav__active">HOME</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./html/about.html">ABOUT</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./html/blog.html">Blog</a>
+                </li>
+                <li class="nav_list" id="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Projects</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./html/projects_file/js.html">Javascript Projects</a>
+                        <a href="./html/projects_file/reactjs.html">ReactJs</a>
+                    </div>
+                </li>
+                <li class="nav_list">
+                    <a href="index.html">PORTFOLIO</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./html/contact.html">CONTACT</a>
+                </li>
+            </ul>
+            <div id="nav_burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Background attachment here! -->
+    <div class="content_image"></div>
+    <!-- Short about me Section part is here! -->
+    <section class="fade-in">
+        <!-- Short about me part is here! -->
+        <div class="section_container ">
+            <div class="section_info" >
+                <p class="section_info__quote fade-in">Made pure HTML, CSS, JavaScript</p>
+                <h1 class="section_info__logo fade-in">Hello, I'm a Sardor Ulmasov! <br> And I am a Developer!</h1>
+                <p class="section_info__p fade-in">
+                    Hello, my name is Sardor Ulmasov. I'm 18 years old!
+                    I am a Front-end Developer. If you want to know about 
+                    me more click the button <code> More About Me </code>!
+                </p>
+                <a href="#" class="section_button">
+                    <button type="button" class="btn fade-in">
+                        More About Me
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Short about me Section part is here! -->
+
+    <!-- About me section is here!    -->
+    <div class="about_me_section fade-in">
+        <h1 class="aboutme_logo ">About Me</h1>
+        <div class="about_me__info">
+             <!-- Image is here! -->
+            <div class="myImg">
+                <img src="./images/myimage.jpeg" alt="myImage">
+            </div>
+            <div class="tabs fade-in">
+                <button class="tablinks" type="button" onclick="myFunc(event, 'about_me')">About Me</button>
+                <button class="tablinks active-bg" id="about_me__story" type="button" onclick="myFunc(event, 'about_skill')">Skills</button>
+                <button class="tablinks" type="button" onclick="myFunc(event, 'about_exp')">Experience</button>
+            </div>
+
+
+            <!-- My Story part is here! -->
+            <div id="about_me" class="tabcontent fade-in" >
+                <h1 class="about_me__story_logo">My Story</h1>
+                <p class="about_me__story_p">Hello, My name is Sardor Ulmasov. I am 18 years old.Far far away, behind the world mountains, far from the countries Central Asia,there is called a country Uzbekistan. I am from Uzbekistan. Currently I am looking for job.</p>
+                <h3 class="about_me__dev">I Do Web Development Since I was 16 Years Old.</h3>
+                <p class="about_me__dev_p">
+                    I have 1 year plus experience working with web development. Since I started learning web development I did major projects. If you want to see my projects, go to my <b>Projects</b> on above the link, and you may see my projects!
+                </p>
+            </div>
+            <!-- My Skills part here! -->
+            <div id="about_skill" class="tabcontent fade-in">
+                <h1 class="about_me__skill_logo">Here My Skills</h1>
+                <p class="about_me__skills_p">I know HTML, CSS, JavaScript and currently learning <b>Reactjs</b>.</p>
+                <!-- Progress is here! -->
+                <div class="aboutme_progress">
+                    <label for="html">HTML Skills:</label>
+                    <progress id="html" value="90" max="100"></progress> 90%
+                </div>
+                <div class="aboutme_progress">
+                    <label for="css">CSS Skills:</label>
+                    <progress id="css" value="80" max="100"></progress> 80%
+                </div>
+                <div class="aboutme_progress">
+                    <label for="js">JavaScript Skills:</label>
+                    <progress id="js" value="78" max="100"></progress> 78%
+                </div>
+                <div class="aboutme_progress">
+                    <label for="reactjs">ReactJs Skills:</label>
+                    <progress id="reactjs" value="35" max="100"></progress>35% 
+                </div>
+            </div>
+            <!-- My experience part is here! -->
+            <div id="about_exp" class="tabcontent fade-in">
+                <h1 class="about_me__exp_logo">My experience</h1>
+                <h3 class="about_me__exp_h3">Worked as a Teacher</h3>
+                <p class="about_me__exp_p">
+                    I worked as  a Teacher in Web Development to children called <b>Maksadli education</b>I worked there about 6 month.
+                </p>
+                <h3 class="about_me__dev">Worked as a freelancer</h3>
+                <p class="about_me__dev_p">
+                    I worked as a freelancer, like helping students and other thing. (Basicly, I helped to students more!).If you want to see my projects, go to my <b>Projects</b> on above the link, and you may see my projects!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section ends here!    -->
+    <div class="services fade-in">
+        <h1 class="services_logo">What Services <br> You Will Get From Me!</h1>
+        <div class="services_container">
+            <!-- UI/UX Design content -->
+            <div class="services_contents">
+                <div class="img_con">
+                    <img class="ux" src="./images/ux-design.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="txt-flex">
+                        <h2 class="txt1">UI/UX Design</h2>
+                        <p class="services_p txt">
+                            If you want to have a good UI and UX in your projects, you are in right person portfolio! I'm good at making user UI and UX. <b>Contact me!</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- digital marketing Design content -->
+            <div class="services_contents">
+                <div class="img_con">
+                    <img class="ux" src="./images/digit-market.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="txt-flex">
+                        <h2 class="txt1">Digital Marketing</h2>
+                        <p class="services_p txt">
+                            Digital Marketing is not just about what you think others think, but also about the statistics. <b>Contact me!</b>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Web development Design content -->
+            <div class="services_contents">
+                <div class="img_con">
+                    <img class="ux" src="./images/webdev.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="txt-flex">
+                        <h2 class="txt1">Web Development</h2>
+                        <p class="services_p txt">
+                            Highly talented front-end developers can be hard to find. <b>Contact me!</b>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="foot fade-in">
+        <div class="footer_contents">
+            <div class="footer_logo">
+                <img src="./images/portfolio.png" alt="Portfolio image">
+            </div>
+            <h1 class="footer_text" id="footer_header">My Email: sardorulmasov84@gmail.com</h1>
+            <p class="footer_str">
+                Beruniy 6 street <br> Samarkand province, Country Uzbekistan!
+            </p>
+        </div>
+
+        <div class="social_medias">
+            <h1 class="social_media__logo">
+                My social medias
+            </h1>
+           <div class="social_links">
+                <a href="https://t.me/saddestman1" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                    Telegram
+                </a>
+                <a href="https://www.instagram.com/mr_lonely__hey" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatSapp
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
+

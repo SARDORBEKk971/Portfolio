@@ -1,0 +1,139 @@
+@use  '../base/variables';
+
+.about {
+    width: 100%;
+    height: 95vh;
+    background-image: url('https://images.unsplash.com/photo-1554497342-902a4f8da8ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9); 
+    background-attachment: fixed;
+}
+.about_me__more_infos {
+    margin-inline: auto;
+    width: 70%;
+    h1 {
+        color: variables.$maintextcolor;
+        font-size: 3em;
+        padding: 3em 0 0.5em 0.6em;
+    }
+
+    .about_me__more_infos-text {
+        color: #eee;
+        font-size: 1.8em;
+    }
+}
+
+
+// skills part is here
+
+.skills{
+    font-size: 16px;
+    width: 100%;
+    height: 50vh;
+    margin: 5em auto 3em auto;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+
+    .skill-logo {
+        position: absolute;
+        font-size: 2em;
+        font-family: variables.$logosfont;
+        left: 1em;
+    }
+}
+
+.skills_container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    
+    .skill_container {
+        margin: 1em;
+        padding: 4em;
+        border: 2px solid black;
+        box-shadow: 4px 6px 8px rgb(0, 0, 0.2);
+        border-radius: 5px;
+        background-color: lightslategrey;
+        color: #fff;
+        transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+        .fab, .fas {
+            font-size: 2em;
+            padding-bottom: 0.6em;
+        }
+    }
+    
+    .skill_container:hover {
+        box-shadow: 6px 8px 12px rgb(0, 0, 0.2);
+    }
+}
+
+// social part is here 
+
+.social_skills {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    .social-logo {
+        font-size: 2em;
+        padding: 0.5em 0 0.7em 1em;
+        font-family: variables.$logosfont;
+    }
+    .social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .social_container {
+        background-color: #e5ff00fe;
+        border-radius: 0.5em;
+        padding: 2em;
+        margin: 1em;
+    }
+}   
+// Language style is here 
+.lan_skills {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    .lan-logo {
+        font-size: 2em;
+        padding: 0.5em 0 0.7em 1em;
+        font-family: variables.$logosfont;
+    }
+    .lan {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .lan_container {
+            background-color: #ff0000fe;
+            border-radius: 0.5em;
+            padding: 2em;
+            margin: 1em;
+            color: #fff;
+        }
+
+        .lan_container2 {
+            background-color: #002ffffe;
+            border-radius: 0.5em;
+            padding: 2em;
+            margin: 1em;
+            color: #fff;
+            margin-bottom: 2.5em;
+        }
+    }
+}

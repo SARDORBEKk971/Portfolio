@@ -1,0 +1,228 @@
+@use '../base/variables';
+
+
+// About me section
+.about_me_section {
+    width: 100%;
+    height: 60em;
+    font-size: 16px;
+    margin-top:1em;
+    padding-top: 3em;
+    .aboutme_logo {
+        color: variables.$mainTextcolor;
+        font-size: 2.5em;
+        padding: 0 0 0.6em 0.4em;
+    }
+}
+
+
+// image and buttons
+.about_me__info {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    position: relative;
+
+   
+    .myImg {
+        width: 80%;
+        border-radius: 0.6em;
+        box-shadow: 2px 4px 8px 10px rgba(3, 3, 3, 0.6);
+        img {
+            z-index: 1;
+            width: 100%;
+            height: 50em;
+            object-fit: cover;
+            border-radius: 0.6em;
+        }
+    }
+
+    .tabs {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 100%;
+            margin: 0.2em;
+            padding: 1em ;
+            border: 2px solid variables.$mainbtncolor;
+            border-radius: 0.5em;
+            cursor: pointer;
+            background-color: variables.$mainbtnbgcolor;
+            color: #fff;
+            transition: all 1s ease-in;
+        }
+
+        button:hover {
+            background-color: rgb(149, 149, 224);
+        }
+    }
+
+    .tabcontent {
+        display: none;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+    }      
+
+}
+// About me Infos are here
+.about_me__story_logo, 
+.about_me__dev, 
+.about_me__skill_logo, 
+.about_me__exp_logo
+ {
+    color: variables.$mainTextcolor;
+    padding: 0.6em 0 0.6em 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+}
+
+.about_me__story_p, 
+.about_me__dev_p, 
+.about_me__skills_p,
+.about_me__exp_p {
+    font-size: 1.2em;
+    border-top: 2px dashed rgb(249, 5, 13);
+    border-bottom: 2px dashed rgb(249, 5, 13);
+    padding: 1em;
+}
+
+.about_me__dev {
+    color: variables.$mainMiddleParagraphColor;
+}
+
+.about_me__dev_p {
+    border-top: 2px dashed rgb(5, 37, 249);
+    border-bottom: 2px dashed rgb(5, 37, 249);
+}
+
+// Skills Infos are here!
+
+.about_me__skill_logo {
+    color: variables.$mainTextcolor;
+}
+
+.about_me__skills_p {
+    border-top: 2px dashed rgb(0, 0, 0);
+    border-bottom: 2px dashed rgb(0, 0, 0);
+}
+
+.aboutme_progress {
+    padding: 2em;
+    width: 100%;
+    label {
+        font-size: 1.5em;
+        color: rgb(229, 7, 85);
+    }
+    progress {
+        width: 100%;
+        padding: 1em;
+    }
+}
+// exp
+
+.about_me__exp_h3 {
+    padding-bottom: 1em;
+}
+
+
+// MEDIAS HERE
+
+
+
+@media (max-width: 876px) {
+   
+    .about_me__story_logo, 
+    .about_me__dev, 
+    .about_me__skill_logo, 
+    .about_me__exp_logo
+    {
+        padding: 0.5em 0 0.5em 0;
+        font-size: 1.6em;
+    }
+
+    .about_me__story_p, 
+    .about_me__dev_p, 
+    .about_me__skills_p,
+    .about_me__exp_p {
+        font-size: 1em;
+    }
+
+    // Skills Infos are here!
+    .aboutme_progress {
+        label {
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about_me_section {
+        .about_me__info {
+            overflow-x: hidden;
+            grid-template-columns: 1fr;
+            gap: 2em 0;
+            position: relative;
+        }
+            .aboutme_logo {
+            font-size: 1.8em;
+            padding: 0.6em;
+        }
+
+        .tabcontent {
+            position: relative;
+            height: 6em;
+            left: 0;
+        }  
+        .myImg {
+            width: 80%;
+            border-radius: 0.6em;
+            box-shadow: 2px 4px 8px 10px rgba(3, 3, 3, 0.6);
+            img {
+                width: 100%;
+                height: 30em;
+                object-fit: cover;
+                border-radius: 0.6em;
+            }
+        }
+    }
+
+    .about_me__story_logo, 
+    .about_me__dev, 
+    .about_me__skill_logo, 
+    .about_me__exp_logo
+    {
+        padding: 0.4em 0 0.4em 0.5em;
+        font-size: 1.4em;
+    }
+
+    .about_me__story_p, 
+    .about_me__dev_p, 
+    .about_me__skills_p,
+    .about_me__exp_p {
+        font-size: 0.9em;
+    }
+
+    // Skills Infos are here!
+    .aboutme_progress {
+        label {
+            font-size: 1em;
+        }
+    }
+}
+
+
+@media (max-width: 300px) {
+    .tabs {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+}

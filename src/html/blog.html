@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Blog page!</title>
+    <link rel="shortcut icon" href="../images/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/blog/blog.scss">
+    <script src="../js/blog.js" defer></script>
+    <script type="module" src="../js/module.js/myNew.mjs" ></script>
+</head>
+<body>
+    <header>
+        <div class="nav_container" id="nav_container">
+            <div class="logo"><a href="../index.html" class="logo_a">S\U</a></div>
+            <ul class="nav_lists " id="nav_lists">
+                <div id="nav_cancel">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <li class="nav_list">
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./about.html">ABOUT</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./blog.html" class="nav__active">Blog</a>
+                </li>
+                <li class="nav_list" id="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Projects</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../html/projects_file/js.html">Javascript Projects</a>
+                        <a href="../html/projects_file/reactjs.html">ReactJs</a>
+                    </div>
+                </li>
+                <li class="nav_list">
+                    <a href="../index.html">PORTFOLIO</a>
+                </li>
+                <li class="nav_list">
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+            <div id="nav_burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="blog_attachment"></div>
+    <!-- My news part -->
+
+    <div class="myNews" id="myNews">
+        <div class="myNews_logo">
+            <h1>Welcome To My Blog Page!</h1>
+        </div>
+        <!-- Mini logo of news -->
+        <hr>
+        <div class="about_news">
+            <h2>My News Are Here ↓</h2>
+        </div>
+        <div class="myNews_text" id="myNew">
+            
+        </div>
+    </div>
+
+    <footer class="foot">
+        <div class="footer_contents">
+            <div class="footer_logo">
+                <img src="../images/portfolio.png" alt="Portfolio image">
+            </div>
+            <h1 class="footer_text" id="footer_header">My Email: sardorulmasov84@gmail.com</h1>
+            <p class="footer_str">
+                Beruniy 6 street <br> Samarkand province, Country Uzbekistan!
+            </p>
+        </div>
+
+        <div class="social_medias">
+            <h1 class="social_media__logo">
+                My social medias
+            </h1>
+           <div class="social_links">
+                <a href="https://t.me/saddestman1" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                    Telegram
+                </a>
+                <a href="https://www.instagram.com/mr_lonely__hey" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatSapp
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+// bg attachment is here!   //
+.content_image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./cssimages/pt_bg.avif');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

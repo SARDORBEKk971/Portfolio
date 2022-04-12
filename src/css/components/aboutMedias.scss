@@ -1,0 +1,196 @@
+@media (max-width: 1000px) {
+    .skills {
+        font-size: 12px;
+
+        .skill-logo {
+            top: -1em;
+        }
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    
+        .skill_container {
+            margin: 1em;
+            padding: 4em;
+            .fab, .fas {
+                font-size: 1.6em;
+                padding-bottom: 0.6em;
+            }
+        }
+    }
+
+}
+@media (max-width: 868px) {
+    // About me section
+    .about_me__more_infos {
+        h1 {
+            font-size: 2.5em;
+        }
+        .about_me__more_infos-text {
+            font-size: 1.5em;
+        }
+    }
+
+    // Skills here
+    .skills {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    
+        .skill_container {
+            margin: 1em;
+            padding: 4em;
+            .fab, .fas {
+                font-size: 1.6em;
+                padding-bottom: 0.6em;
+            }
+        }
+        
+        .skill_container:hover {
+            box-shadow: 6px 8px 12px rgb(0, 0, 0.2);
+        }
+    }
+
+    // language-skill is here!
+
+    .lan_skills {
+        height: min-content;
+        .lan-logo {
+            font-size: 1.7em;
+        }
+        .lan {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+}
+@media (max-width: 786px) {
+    // aboutme section part is here
+    section {
+        height: 80vh;
+    }
+    .about_me__more_infos {
+    
+        h1 {
+            font-size: 2em;
+        }
+        .about_me__more_infos-text {
+            font-size: 1em;
+        }
+    }
+    // Skills part is here 
+    .skills {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+    
+        .skill_container {
+            margin: 1em;
+            padding: 4em;
+            .fab, .fas {
+                font-size: 1.6em;
+                padding-bottom: 0.6em;
+            }
+        }
+        
+        .skill_container:hover {
+            box-shadow: 6px 8px 12px rgb(0, 0, 0.2);
+        }
+    }
+
+    // Social skills is here
+
+    .social_skills {
+        height: min-content;
+        .social {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .social_container {
+            padding: 1em;
+        }
+    } 
+
+    // language-skill is here
+
+    .lan_skills {
+        height: min-content;
+        .lan-logo {
+            font-size: 1.5em;
+        }
+        .lan {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    // Aboutme section part is here!
+    section {
+        height: 60vh;
+    }
+    .about_me__more_infos {
+    
+        h1 {
+            font-size: 1.5em;
+        }
+    
+        .about_me__more_infos-text {
+            font-size: 0.8em;
+        }
+    }
+
+    // Skill part is here 
+    .skills {
+        width: 100%;
+        height: min-content;
+
+        .skill-logo {
+            top: -2em;
+        }
+    }
+    .skills_container {
+        grid-template-columns: 1fr;
+    
+        .skill_container {
+            margin: 1em;
+            padding: 4em;
+            .fab, .fas {
+                font-size: 1.6em;
+                padding-bottom: 0.6em;
+            }
+        }
+    }
+
+    // Social part is here 
+    .social_skills {
+        height: min-content;
+        .social {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .social_container {
+            padding: 2em;
+        }
+    } 
+
+    // language-skill is here
+
+    .lan_skills {
+        height: min-content;
+        .lan-logo {
+            font-size: 1.5em;
+        }
+        .lan {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+}
